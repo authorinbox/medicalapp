@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en" class="u-responsive-xl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Overview</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .u-body {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+
+            h1:not(.u-title) {
+                line-height: 1.1;
+            }
+
+            .u-text-custom-color-3,
+            .u-input.u-text-custom-color-3,
+            .u-input.u-text-custom-color-3[class*="u-border-"],
+            li.active>a.u-button-style.u-text-custom-color-3,
+            li.active>a.u-button-style.u-text-custom-color-3[class*="u-border-"],
+            a.u-button-style.u-text-custom-color-3,
+            a.u-button-style.u-text-custom-color-3[class*="u-border-"] {
+                color: #a4a6b3 !important;
+            }
+
+            .u-group {
+                display: flex;
+            }
+
+            .u-expanded-height {
+                position: absolute !important;
+                height: 100% !important;
+                top: 0 !important;
+            }
+
+            .u-custom-color-1,
+            .u-body.u-custom-color-1,
+            section.u-custom-color-1:before,
+            .u-custom-color-1>.u-container-layout:before,
+            .u-custom-color-1>.u-inner-container-layout:before,
+            .u-custom-color-1.u-sidenav:before,
+            .u-container-layout.u-container-layout.u-custom-color-1:before,
+            .u-table-alt-custom-color-1 tr:nth-child(even) {
+                color: #ffffff;
+                background-color: #363740;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+            }
+
+            .u-section-1 .u-group-1 {
+                width: 255px;
+                background-image: none;
+                left: 0;
+                right: auto;
+                min-height: 1456px;
+            }
+
+            .logo {
+                display: inline-block;
+                height: 32px;
+                /* adjust the height as per your logo */
+                margin-left: 32px;
+                /* adjust the margin as per your design */
+                margin-top: 37px;
+            }
+
+            ul:not(.u-unstyled) {
+                margin-top: 128px;
+                margin-left: -177px;
+            }
+
+            .nav-menu {
+                list-style-type: none;
+                /* Remove bullets */
+                margin: 0;
+                /* Remove default margin */
+                padding: 0;
+                /* Remove default padding */
+                background-color: #363740;
+                /* Set the background color of the menu */
+            }
+
+            .nav-menu li {
+                width: 255px;
+                display: flex;
+                align-items: center;
+                height: 50px;
+            }
+
+            .nav-menu li a {
+                display: block;
+                text-decoration: none;
+                font-size: 16px;
+                color: #A4A6B3;
+                margin-left: 40px;
+                padding-left: 3px;
+                /* Add padding to the left of the text */
+                vertical-align: middle;
+            }
+
+            .nav-menu li a img {
+                margin-right: 10px;
+                /* Add some spacing between the icon and text */
+            }
+
+            /* Style the hover effect on the links in the navigation menu */
+            .nav-icon {
+                height: 16px;
+            }
+
+            .nav-text {
+                margin-left: 20px !important;
+                padding-bottom: 3.5px;
+            }
+
+            .form-head {
+                font-size: 14px;
+                font-weight: bold;
+                color: #080D28;
+            }
+
+            .rounded {
+                border-radius: 6px;
+            }
+        
+            #overlay {
+                /* Add CSS for the overlay element */
+                /* Position the overlay element to cover the entire page */
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                /* Set the background color and opacity */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Set the display to none by default */
+                display: block;
+        }
+            .content {
+                background-color: white;
+                border-radius: 10px;
+                width: 500px;
+                height: 200px;
+                text-align: center;
+            }
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 0 278px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+  }
+  .form-head {
+    margin-bottom: 10px;
+  }
+
+td, th {
+    border: 1px solid white;
+    text-align: none;
+    padding: 8px;
+}
+
+        </style>
+    </head>
+    <body class="u-body u-xl-mode" data-lang="en">
+        <section class="u-clearfix u-section-1" id="sec-1e7d">
+            <div class="u-container-style u-custom-color-1 u-expanded-height u-group u-shape-rectangle u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <img src="{{ url_for('static', filename='images/logo - copy.png')}}" alt="Logo" class="logo">
+                    <h1 class="u-text u-text-custom-color-3 u-text-1" style="font-size:19px;margin:-34px 0 0 76px"> Dashboard </h1>
+                    <br>
+                </div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/home">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/overview.png')}}">
+                        </a>
+                        <a class="nav-text" href="/home">Overview</a>
+                    </li>
+                    <li>
+                        <a href="/search">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/search.png') }}">
+                        </a>
+                        <a class="nav-text" href="/search">Pubmed Search</a>
+                    </li>
+                    <!--
+                    <li><a href="Campaigns.html"><img class="nav-icon" src="Icons/Campaigns.png"></a><a class="nav-text" href="Campaigns.html">Campaigns</a></li>
+                    ...-->
+                    <li>
+                        <a href="/data">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/data.png')}}">
+                        </a>
+                        <a class="nav-text" href="/data">Data Storage</a>
+                    </li>
+                    <li style="border-left:3px solid #c3c3c3">
+                        <a href="" style="margin-left:37px">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/journals.png')}}">
+                        </a>
+                        <a class="nav-text" style="color:#c3c3c3" href="">Journals</a>
+                    </li>
+                    <li>
+                        <a href="/templates">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/templates.png')}}">
+                        </a>
+                        <a class="nav-text" href="/templates">Templates</a>
+                    </li>
+                    <li>
+                        <a href="/recipients">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/campaigns.png')}}">
+                        </a>
+                        <a class="nav-text" href="/recipients">Campaign</a>
+                    </li>
+                    <li>
+                        <a href="/logout" style="padding-left:5px">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/logout.png')}}">
+                        </a>
+                        <a class="nav-text" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+{% if no_of_jour %}
+        <h1 style="margin: 50px 0 0 278px;">Journals Used - {{ no_of_jour }}</h1>
+    {% endif %}
+    <br>
+    <form action="/add_journal" method="post" enctype="multipart/form-data">
+  <div class="form-container"> 
+    <div class="form-group">
+      <label class="form-head" for="journal-name">Journal Name</label>
+      <input class="rounded" type="text" id="journal-name" name="journal-name" required>
+    </div>
+    <div class="form-group">
+      <label class="form-head" for="issn">ISSN</label>
+      <input class="rounded" type="text" id="issn" name="issn" required>
+    </div>
+    <div class="form-group">
+      <label class="form-head" for="doi">DOI</label>
+      <input class="rounded" type="text" id="doi" name="doi" required>
+    </div>
+  </div>
+  <br>
+  <div class="form-container">
+    <div class="form-group">
+                <label class="form-head" for="countries">Country Of Registration</label>
+                <select class="rounded" type="text" id="countries" name="countries" style="width:205px;height:32px" required>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Azerbaijan">Azerbaijan</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Barbados">Barbados</option>
+                    <option value="Belarus">Belarus</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Belize">Belize</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Brunei">Brunei</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cabo Verde">Cabo Verde</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Chile">Chile</option>
+                    <option value="China">China</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Comoros">Comoros</option>
+                    <option value="Congo">Democratic Republic of the Congo</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Cyprus">Cyprus</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominica">Dominica</option>
+                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Eswatini">Eswatini</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Fiji">Fiji</option>
+                    <option value="Finland">Finland</option>
+                    <option value="France">France</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Grenada">Grenada</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Haiti">Haiti</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Iceland">Iceland</option>  
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Israel">Israel</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Kiribati">Kiribati</option>
+                    <option value="North Korea">North Korea</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Kosovo">Kosovo</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Laos">Laos</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Marshall Islands">Marshall Islands</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Federated States of Micronesia">Federated States of Micronesia</option>
+                    <option value="Moldova">Moldova</option>
+                    <option value="Monaco">Monaco</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Montenegro">Montenegro</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Myanmar">Myanmar (Burma)</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="North Macedonia">North Macedonia</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Palau">Palau</option>
+                    <option value="Panama">Panama</option>
+                    <option value="Papua New Guinea">Papua New Guinea</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Romania">Romania</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                    <option value="Saint Lucia">Saint Lucia</option>
+                    <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                    <option value="Samoa">Samoa</option>
+                    <option value="San Marino">San Marino</option>
+                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Serbia">Serbia</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Solomon Islands">Solomon Islands</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Suriname">Suriname</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Tajikistan">Tajikistan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tonga">Tonga</option>
+                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="Turkmenistan">Turkmenistan</option>
+                    <option value="Tuvalu">Tuvalu</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States of America">United States of America</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Vanuatu">Vanuatu</option>
+                    <option value="Vatican City">Vatican City (Holy See)</option>
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Yemen">Yemen</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>  
+                </select>
+                </div>
+    <div class="form-group">
+                <label class="form-head" for="start-year">Journal Start Year</label>
+                <input class="rounded" type="date" id="start-year" name="start-year" style="width:205px;height:32px" required>
+                </div>
+    <div class="form-group">
+                <label class="form-head" for="category">Category Drop Down</label>
+                <select class="rounded" type="text" id="category" name="category" style="width:205px;height:32px" required>
+                    <option value="Agriculture and Biological sciences">Agriculture and Biological sciences</option>
+    <option value="Anthropology">Anthropology</option>
+    <option value="Arts and humanities">Arts and humanities</option>
+    <option value="Astronomy, Astro physics and space sciences">Astronomy, Astro physics and space sciences</option>
+    <option value="Biotechnology">Biotechnology</option>
+    <option value="Buit environment">Buit environment</option>
+    <option value="Business Management and Accounting">Business Management and Accounting</option>
+    <option value="Chemical Engineering">Chemical Engineering</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="Commerce">Commerce</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Decision Science">Decision Science</option>
+    <option value="Dentistry">Dentistry</option>
+    <option value="Drug Discovery">Drug Discovery</option>
+    <option value="Earth and Planetary Sciences">Earth and Planetary Sciences</option>
+    <option value="Economics and Finance">Economics and Finance</option>
+    <option value="Education">Education</option>
+    <option value="Energy and Power">Energy and Power</option>
+    <option value="Engineering and Technology">Engineering and Technology</option>
+    <option value="Environmental Sciences">Environmental Sciences</option>
+    <option value="Forensics">Forensics</option>
+    <option value="Geography">Geography</option>
+    <option value="Health Professions">Health Professions</option>
+    <option value="History">History</option>
+    <option value="Immunology">Immunology</option>
+    <option value="Life Siences">Life Siences</option>
+    <option value="Material Sciences">Material Sciences</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Medicine">Medicine</option>
+    <option value="Microbiology and Virology">Microbiology and Virology</option>
+    <option value="Nano science">Nano science</option>
+  <option value="Neurosciences">Neurosciences</option>
+  <option value="Nuclear science">Nuclear science</option>
+  <option value="Nursing">Nursing</option>
+  <option value="Pharmacology">Pharmacology</option>
+  <option value="Pharmasuitical Sciences">Pharmasuitical Sciences</option>
+  <option value="Physics">Physics</option>
+  <option value="Social Scieces">Social Scieces</option>
+  <option value="Statistics">Statistics</option>
+  <option value="Toxicology">Toxicology</option>
+  <option value="Veterinary Science and Veterinary Medicine">Veterinary Science and Veterinary Medicine</option>
+  <option value="Others">Others</option>
+                </select>
+                </div>
+            </div>
+    <div class="form-container">
+    <div class="form-group">
+        <label class="form-head" for="image" style="margin-top: 15px;" >Upload Cover Page</label>
+        <input type="file" name="image" id="image" accept="image/*"required>
+    </div>
+</div>
+                <br>
+                <input class="rounded" type="submit" value="Add" style="font-size: 16px;border: none;color: #fff;background-color: #3751ff;height: 48px;width: 123px;margin:0 0 0 278px">
+            </form>
+{% if journals %}
+        <h1 style="margin: 50px 0 0 278px;">Created Journals -</h1>
+        <table style="margin: 25px 0 0 278px;border: 1px solid black;border-collapse: collapse;text-align: center;">
+            <tr style="border: 1px solid black;">
+                <th style="border: 1px solid black;padding: 0 10px;">Name</th>
+                <th style="border: 1px solid black;padding: 0 10px;">ISSN</th>
+                <th style="border: 1px solid black;padding: 0 10px;">DOI</th>
+                <th style="border: 1px solid black;padding: 0 10px;">Country</th>
+                <th style="border: 1px solid black;padding: 0 10px;">Start Year</th>
+                <th style="border: 1px solid black;padding: 0 10px;">Category</th>
+                <th style="border: 1px solid black;padding: 0 10px;">Created On</th>
+                <th style="border: 1px solid black;padding: 0 10px;">ID</th>
+            </tr>
+            {% for journal in journals %}
+            <tr style="border: 1px solid black;">
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[0] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[1] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[2] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[3] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[4] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[5] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[6] }}</td>
+                <td style="border: 1px solid black;padding: 0 10px;">{{ journal[7] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+        </section>
+
+    {% if alert %} 
+        <div id="overlay"></div>
+    <div id="popup" style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+            <div class="content">
+                <h3 style="font-family: 'Mulish', sans-serif;padding-top:20px;font-size: 30px;font-weight: bold;">{{ alert }}</h3><button id="close">Close</button>
+            </div>
+        </div>
+    {% endif %}
+    <script>
+        document.querySelector('#close').addEventListener('click', function() {
+            document.querySelector('#popup').style.display = 'none';
+             document.querySelector('#overlay').style.display = 'none';
+        });
+    </script>
+    </body>
+</html>

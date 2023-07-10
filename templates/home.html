@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en" class="u-responsive-xl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .buttons-container {
+            /* Add CSS to position the buttons container in the top right */
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 55px; /* Add padding for spacing */
+        }
+
+        .button {
+            /* Add CSS for styling the buttons */
+            display: inline-block; /* Make the buttons display in a row */
+            margin-right: 10px; /* Add margin for spacing between buttons */
+            /* Add other styles for background color, text color, padding, etc. */
+            font-family: Helvetica;
+            background: none;
+            border: none;
+            margin: 0 50px 0 0;
+            color: black;
+            font-size: 18px;
+        }
+
+            .u-section-1 .u-form-group-1 {
+                margin-top: 89px !important;
+            }
+
+            .u-section-1 .u-sheet-1 {
+                min-height: 100vh;
+            }
+
+            .u-section-1 .u-text-1 {
+                margin: -330px auto 0;
+                font-size: 34px;
+                font-family: 'Mulish';
+                font-weight: bold;
+            }
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-top: 25px;
+                width: 203px;
+            }
+
+            .logo {
+                width: 50px;
+            }
+
+            .u-input {
+                margin-top: 5px;
+            }
+
+            #overlay {
+                /* Add CSS for the overlay element */
+                /* Position the overlay element to cover the entire page */
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                /* Set the background color and opacity */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Set the display to none by default */
+                display: block;
+        }
+            .content {
+                background-color: white;
+                border-radius: 10px;
+                width: 500px;
+                height: 200px;
+                text-align: center;
+            }
+
+        .pricing-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing {
+  text-align: center;
+  margin: 0 20px;
+  border: 1px #3A1AFC solid;
+  border-radius: 5px;
+  height: 350px;
+  width: 280px;
+}
+
+.pricing-button:hover {
+    color: white;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Basic', sans-serif;
+  color: black;
+  padding-top: 45px; 
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  font-family: 'Basic', sans-serif;
+  padding-top: 50px; 
+  line-height: 1.3;
+}
+
+.pricing-button {
+  font-size: 24px;
+  background-color: #5e15fa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Basic', sans-serif;
+  padding: 5px 50px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px; /* set a height for the parent container */
+
+  /* align the last element a little bit up from the bottom */
+  margin-bottom: 10px;
+}
+
+.pricing h2,
+.pricing h3 {
+  margin: 0; /* remove default margins */
+}
+
+.pricing-button {
+  margin-top: 80px; /* push the button up from the bottom */
+}
+    .full-width-div {
+        margin-top: 100px;
+        width: 100%;
+        height: 500px;
+        background-color: #0f0bfd;
+    }
+</style>
+    </head>
+    <body>
+        <img src="{{ url_for('static', filename='images/abox.jpg') }}" style="height:130px;padding:10px 0 0 20px">
+        <div class="buttons-container">
+        <a class="button" href="#pricing" >Pricing</a>
+        <a class="button" href="/login" >Login</a>
+        </div>
+        <hr style="margin: -4px 0 0 0;">
+<div style="display: flex; align-items: center;">
+    <img src="{{ url_for('static', filename='images/illus.jpg') }}" style="height: 500px; padding: 0 50px 0 0;">
+    <div style="display: block;">
+        <h1 style="font-family: 'DM Serif Display', serif; font-size: 72px; color: #051243; margin-bottom: 0;">Email campaign Made<br>easy for Publishing..!</h1>
+        <a style="font-family: sans-serif;font-size: 18px;font-weight: 500;color: white;background-color: #0f6fff;display: block;width: 150px;height: 50px;margin-top: 60px;margin-left: 50px;border-radius: 5px;padding-top: 15px;padding-left: 13px;" href="#pricing">GET STARTED</a>
+    </div>
+</div>
+
+<hr style="margin: 100px 0 0 0;" id="pricing">
+<h1 style="font-family: 'Basic', sans-serif;text-align: center;font-size: 42px;margin-top: 50px;">Choose your plan</h1>
+    <div class="pricing-container" style="margin-top:60px">
+      <div class="pricing">
+        <h2>Free Trial</h2>
+        <h3>Experience how <br>ABOX works.<br>*Limited access</h3>
+        <a href="/trial" class="pricing-button">START</a>
+      </div>
+      <div class="pricing">
+        <h2>Basic Plan</h2>
+        <h3>Rs. 1000/Journal/<br>Month<br>*Billed annually</h3>
+        <a href="/basic-plan" class="pricing-button">START</a>
+      </div>
+      <div class="pricing">
+        <h2>Advanced</h2>
+        <h3>Drop your custom<br>requirements. One of<br>our executives will reach<br>out to you.</h3>
+        <a href="/contact" class="pricing-button" style="margin-top: 55px;">START</a>
+      </div>
+    </div>
+
+
+<div class="full-width-div">
+    <h3 style="text-align: center;color: white;font-size: 32px;">Testimonials</h3>
+
+</div>
+
+    {% if alert %} 
+    <div id="overlay"></div>
+    <div id="popup" style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+            <div class="content">
+                <h3 style="font-family: 'Mulish', sans-serif;padding-top:20px;font-size: 30px;font-weight: bold;">{{ alert }}</h3><button id="close">Okay</button>
+            </div>
+        </div>
+    {% endif %}
+    <script>
+        document.querySelector('#close').addEventListener('click', function() {
+            document.querySelector('#popup').style.display = 'none';
+             document.querySelector('#overlay').style.display = 'none';
+        });
+    </script>
+    </body>
+</html>

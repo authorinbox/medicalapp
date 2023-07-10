@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+        {{ turbo() }}
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <style type="text/css">
+            * {
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .form-head {
+                font-size: 20px;
+                font-weight: bold;
+                color: #978f8f;
+            }
+
+            .rounded {
+                border-radius: 6px;
+            }
+        </style>
+    </head>
+    <body style="margin: -8px;">
+        <div style="display: flex; justify-content: center; align-items: center; margin: 0;padding: 40px 0 20px 0;border-bottom: 3px solid #e5e5e5;">
+            <h3 style="margin: 0 0 0 33px;font-size: 30px;font-weight: bold;">1. Create </h3>
+            <h3 style="font-size: 50px;padding:0 20px 0 20px;margin:0">&#8594;</h3>
+            <h3 style="margin: 0;font-size: 30px;font-weight: bold;">2. Add recipients</h3>
+            <h3 style="font-size: 50px;padding:0 20px 0 20px;margin:0">&#8594;</h3>
+            <h3 style="color: #5D5BDA;margin: 0;font-size: 30px;font-weight: bold;">3. Publish & Send</h3>
+        </div>
+        <br>
+        <h3 style="font-size: 24px;font-weight: bold;margin: -15px 0 0 0px;text-align: center;color:red;">* Note - After clicking Launch, it may take time to send all emails</h3>
+        <h1 style="font-size: 40px;font-weight: bold;margin: 10px 0 0 0px;text-align: center;">Send a test email</h1>
+        <br>
+        <h3 style="font-size: 24px;font-weight: bold;margin: -15px 0 0 0px;text-align: center;">To make sure the integration is successful</h3>
+        <form action="/test" method="post">
+            <div style="text-align:center;">
+                <label class="form-head" for="testname" style="margin: 0 10px 0 0">Name</label>
+                <input class="rounded" type="text" id="testname" name="testname" style="margin:20px 0 0 0px;height: 40px;width: 1000px;font-size: 20px;" required>
+                <br>
+                <label class="form-head" for="testemail" style="margin: 0 12px 0 0">Email</label>
+                <input class="rounded" type="email" id="testemail" name="testemail" style="margin:20px 0 0 0px;height: 40px;width: 1000px;font-size: 20px;" required>
+                <br>
+                <br>
+                <input class="rounded" type="submit" value="Test" style="font-size: 20px;border: none;color: #fff;background-color: #3751ff;height: 48px;width: 123px;margin:0 0 30px 0">
+                <br>
+            </div>
+        </form>
+        <form action="/publish" method="post">
+            <input type="submit" value="Launch" class="rounded" style="text-decoration: none;font-size: 18px;border: none;color: #fff;background-color: #3751ff;padding: 10px 20px;margin:0 0 30px 1150px">
+        </form>
+        {% include "publishsnip.html" %}
+    </body>
+    {% if alert %} 
+    <script>
+        alert("{{ alert }}");
+    </script> 
+    {% endif %}
+</html>

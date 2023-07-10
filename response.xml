@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article">
+  <!--The publisher of this article does not allow downloading of the full text in XML form.-->
+  <?properties manuscript?>
+  <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+    <restricted-by>pmc</restricted-by>
+  </processing-meta>
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="nlm-journal-id">101120659</journal-id>
+      <journal-id journal-id-type="pubmed-jr-id">22475</journal-id>
+      <journal-id journal-id-type="nlm-ta">Best Pract Res Clin Haematol</journal-id>
+      <journal-id journal-id-type="iso-abbrev">Best Pract Res Clin Haematol</journal-id>
+      <journal-title-group>
+        <journal-title>Best practice &amp; research. Clinical haematology</journal-title>
+      </journal-title-group>
+      <issn pub-type="ppub">1521-6926</issn>
+      <issn pub-type="epub">1532-1924</issn>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="pmid">36517119</article-id>
+      <article-id pub-id-type="pmc">10329873</article-id>
+      <article-id pub-id-type="doi">10.1016/j.beha.2022.101400</article-id>
+      <article-id pub-id-type="manuscript">NIHMS1908182</article-id>
+      <article-categories>
+        <subj-group subj-group-type="heading">
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Acute GVHD: New approaches to clinical trial monitoring</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Spyrou</surname>
+            <given-names>Nikolaos</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Levine</surname>
+            <given-names>John E.</given-names>
+          </name>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Ferrara</surname>
+            <given-names>James L.M.</given-names>
+          </name>
+          <xref rid="CR1" ref-type="corresp">*</xref>
+        </contrib>
+        <aff id="A1">The Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai, New York, NY, USA</aff>
+      </contrib-group>
+      <author-notes>
+        <corresp id="CR1"><label>*</label>Corresponding author. The Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai, 1 Gustave L. Levy Place, Box 1410, NY, 10029, USA. <email>james.ferrara@mssm.edu</email> (J.L.M. Ferrara).</corresp>
+      </author-notes>
+      <pub-date pub-type="nihms-submitted">
+        <day>25</day>
+        <month>6</month>
+        <year>2023</year>
+      </pub-date>
+      <pub-date pub-type="ppub">
+        <month>12</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="epub">
+        <day>08</day>
+        <month>10</month>
+        <year>2022</year>
+      </pub-date>
+      <pub-date pub-type="pmc-release">
+        <day>09</day>
+        <month>7</month>
+        <year>2023</year>
+      </pub-date>
+      <volume>35</volume>
+      <issue>4</issue>
+      <fpage>101400</fpage>
+      <lpage>101400</lpage>
+      <abstract id="ABS1">
+        <p id="P1">Acute GVHD occurs in nearly 50% of patients receiving hematopoietic cell transplantation (HCT), and is the major driver of mortality. However, progress in the development of new acute GVHD therapeutics has been slow, in part due to heterogeneity in acute GVHD data collection and interpretation among centers. Herein, we first describe the methods used by the Mount Sinai Acute GVHD International Consortium (MAGIC) to standardize acute GVHD data collection and curation. We then review the utility of serum biomarkers, specifically the MAGIC Algorithm Probability (MAP) that combines two GI biomarkers (ST2 and REG3&#x3B1;) that has been shown to be more accurate than changes in clinical symptom severity after GVHD treatment. We then present preliminary data on the feasibility of a surrogate clinical trial endpoint that combines clinical response and MAP two weeks after treatment. This novel endpoint is an earlier and potentially better predictor of non-relapse mortality than the current gold standard of clinical response four weeks after treatment.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>Acute graft versus host disease</kwd>
+        <kwd>Biomarkers</kwd>
+        <kwd>Mount Sinai Acute GVHD International</kwd>
+        <kwd>Consortium</kwd>
+        <kwd>MAGIC Algorithm Probability</kwd>
+        <kwd>Clinical trial endpoint</kwd>
+        <kwd>Surrogate endpoint</kwd>
+        <kwd>Composite endpoint</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+</article>
+</pmc-articleset>

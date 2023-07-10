@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en" class="u-responsive-xl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Overview</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .u-body {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                color: inherit;
+                font: inherit;
+                margin: 0;
+            }
+
+            h1:not(.u-title) {
+                line-height: 1.1;
+            }
+
+            .u-text-custom-color-3,
+            .u-input.u-text-custom-color-3,
+            .u-input.u-text-custom-color-3[class*="u-border-"],
+            li.active>a.u-button-style.u-text-custom-color-3,
+            li.active>a.u-button-style.u-text-custom-color-3[class*="u-border-"],
+            a.u-button-style.u-text-custom-color-3,
+            a.u-button-style.u-text-custom-color-3[class*="u-border-"] {
+                color: #a4a6b3 !important;
+            }
+
+            .u-group {
+                display: flex;
+            }
+
+            .u-expanded-height {
+                position: absolute !important;
+                height: 100% !important;
+                top: 0 !important;
+            }
+
+            .u-custom-color-1,
+            .u-body.u-custom-color-1,
+            section.u-custom-color-1:before,
+            .u-custom-color-1>.u-container-layout:before,
+            .u-custom-color-1>.u-inner-container-layout:before,
+            .u-custom-color-1.u-sidenav:before,
+            .u-container-layout.u-container-layout.u-custom-color-1:before,
+            .u-table-alt-custom-color-1 tr:nth-child(even) {
+                color: #ffffff;
+                background-color: #363740;
+            }
+
+            *,
+            *:before,
+            *:after {
+                box-sizing: border-box;
+            }
+
+            .u-section-1 .u-group-1 {
+                width: 255px;
+                background-image: none;
+                left: 0;
+                right: auto;
+                min-height: 1456px;
+            }
+
+            .logo {
+                display: inline-block;
+                height: 32px;
+                /* adjust the height as per your logo */
+                margin-left: 32px;
+                /* adjust the margin as per your design */
+                margin-top: 37px;
+            }
+
+            ul:not(.u-unstyled) {
+                margin-top: 128px;
+                margin-left: -177px;
+            }
+
+            .nav-menu {
+                list-style-type: none;
+                /* Remove bullets */
+                margin: 0;
+                /* Remove default margin */
+                padding: 0;
+                /* Remove default padding */
+                background-color: #363740;
+                /* Set the background color of the menu */
+            }
+
+            .nav-menu li {
+                width: 255px;
+                display: flex;
+                align-items: center;
+                height: 50px;
+            }
+
+            .nav-menu li a {
+                display: block;
+                text-decoration: none;
+                font-size: 16px;
+                color: #A4A6B3;
+                margin-left: 40px;
+                padding-left: 3px;
+                /* Add padding to the left of the text */
+                vertical-align: middle;
+            }
+
+            .nav-menu li a img {
+                margin-right: 10px;
+                /* Add some spacing between the icon and text */
+            }
+
+            /* Style the hover effect on the links in the navigation menu */
+            .nav-icon {
+                height: 16px;
+            }
+
+            .nav-text {
+                margin-left: 20px !important;
+                padding-bottom: 3.5px;
+            }
+
+            .form-head {
+                font-size: 14px;
+                font-weight: bold;
+                color: #080D28;
+            }
+
+            .rounded {
+                border-radius: 6px;
+            }
+        
+            #overlay {
+                /* Add CSS for the overlay element */
+                /* Position the overlay element to cover the entire page */
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                /* Set the background color and opacity */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Set the display to none by default */
+                display: block;
+        }
+            .content {
+                background-color: white;
+                border-radius: 10px;
+                width: 500px;
+                height: 200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body class="u-body u-xl-mode" data-lang="en">
+        <section class="u-clearfix u-section-1" id="sec-1e7d">
+            <div class="u-container-style u-custom-color-1 u-expanded-height u-group u-shape-rectangle u-group-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <img src="{{ url_for('static', filename='images/logo - copy.png')}}" alt="Logo" class="logo">
+                    <h1 class="u-text u-text-custom-color-3 u-text-1" style="font-size:19px;margin:-34px 0 0 76px"> Dashboard </h1>
+                    <br>
+                </div>
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/home">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/overview - selected.png')}}">
+                        </a>
+                        <a class="nav-text" href="/home">Overview</a>
+                    </li>
+                    <li>
+                        <a href="/search">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/search.png') }}">
+                        </a>
+                        <a class="nav-text" href="/search">Pubmed Search</a>
+                    </li>
+                    <!--
+                    <li><a href="Campaigns.html"><img class="nav-icon" src="Icons/Campaigns.png"></a><a class="nav-text" href="Campaigns.html">Campaigns</a></li>
+                    ...-->
+                    <li>
+                        <a href="/data">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/data.png')}}">
+                        </a>
+                        <a class="nav-text" href="/data">Data Storage</a>
+                    </li>
+                    <li>
+                        <a href="/journals">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/journals.png')}}">
+                        </a>
+                        <a class="nav-text" href="/journals">Journals</a>
+                    </li>
+                    <li style="border-left:3px solid #c3c3c3">
+                        <a href="" style="margin-left:37px">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/templates - selected.png')}}">
+                        </a>
+                        <a class="nav-text" style="color:#c3c3c3" href="">Templates</a>
+                    </li>
+                    <li>
+                        <a href="/recipients">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/campaigns.png')}}">
+                        </a>
+                        <a class="nav-text" href="/recipients">Campaigns</a>
+                    </li>
+                    <li>
+                        <a href="/logout" style="padding-left:5px">
+                            <img class="nav-icon" src="{{ url_for('static', filename='images/logout.png')}}">
+                        </a>
+                        <a class="nav-text" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+<h1 style="margin: 50px 0 0 278px;">List Of Journals - </h1>
+<a href="/add_template" class="rounded" style="font-size: 16px;display: block;text-align: center;padding-top: 12px;color: #fff;background-color: #3751ff;height: 48px;width: 123px;margin:0 0 0 1100px;text-decoration: none;">Add New</a>
+<div style="margin: 30px 0 0 278px;">
+{% if journals %}
+{% for id, journal in journals.items() %}
+<div style="width: 20%;float: left;margin-right: 30px;">
+    <a href="/view_templates/{{ id }}" style="text-decoration: none;">
+    <img style="width: 100%" src="{{ url_for('static', filename='journals/' + journal[0]) }}">
+
+
+<h1 style="margin:0px 0 10px 5px;color: black;">{{ journal[1] }}</h1></a>
+</div>
+    {% endfor %}
+</ul>
+{% endif %}</div>
+        </section>
+    {% if alert %} 
+        <div id="overlay"></div>
+    <div id="popup" style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+            <div class="content">
+                <h3 style="font-family: 'Mulish', sans-serif;padding-top:20px;font-size: 30px;font-weight: bold;">{{ alert }}</h3><button id="close">Close</button>
+            </div>
+        </div>
+    {% endif %}
+    <script>
+        document.querySelector('#close').addEventListener('click', function() {
+            document.querySelector('#popup').style.display = 'none';
+             document.querySelector('#overlay').style.display = 'none';
+        });
+    </script>
+    </body>
+</html>

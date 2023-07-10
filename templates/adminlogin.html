@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en" class="u-responsive-xl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <title>Log In</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+        <style type="text/css">
+            * {
+                font-family: 'Mulish', sans-serif;
+            }
+
+            .u-form-vertical.u-form-spacing-23,
+            .u-form-vertical.u-form-spacing-23 .u-form-step {
+                margin-left: -15px;
+                width: 98.5%;
+            }
+
+            .u-label {
+                margin-bottom: 10px;
+            }
+
+            .u-section-1 .u-form-1 {
+                height: 648px;
+                background-image: none;
+                width: 325px;
+                margin: 100px auto 0;
+            }
+
+            .u-section-1 .u-form-group-1 {
+                margin-top: 89px !important;
+            }
+
+            .u-section-1 .u-sheet-1 {
+                min-height: 100vh;
+            }
+
+            .u-section-1 .u-text-1 {
+                margin: -330px auto 0;
+                font-size: 34px;
+                font-family: 'Mulish';
+                font-weight: bold;
+            }
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding-top: 25px;
+                width: 203px;
+            }
+
+            .logo {
+                width: 50px;
+            }
+
+            .u-input {
+                margin-top: 5px;
+            }
+
+            #overlay {
+                /* Add CSS for the overlay element */
+                /* Position the overlay element to cover the entire page */
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                /* Set the background color and opacity */
+                background-color: rgba(0, 0, 0, 0.5);
+                /* Set the display to none by default */
+                display: block;
+        }
+            .content {
+                background-color: white;
+                border-radius: 10px;
+                width: 500px;
+                height: 200px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="u-clearfix u-custom-color-1 u-section-1" id="sec-dbc5">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <div class="u-form u-palette-4-light-3 u-form-1" style="background: white;">
+                    <form method="post" action="/admin_login" class="u-clearfix u-form-spacing-23 u-form-vertical u-inner-form" source="email" name="form" style="padding: 0px 0;background: white;">
+                        <div class="logo-container">
+                            <img src="{{ url_for('static', filename='images/logo.png')}}" alt="Logo" class="logo" style="margin-left:auto;width: 50px;">
+                        </div>
+                        <div class="u-form-group u-form-name u-form-group-1">
+                            <label for="name-ec58" class="u-label">EMAIL</label>
+                            <input type="email" placeholder="Email address" id="name-ec58" name="email" class="u-input u-input-rectangle u-radius-8" required>
+                        </div>
+                        <div class="u-form-email u-form-group">
+                            <label for="email-ec58" class="u-label">PASSWORD</label>
+                            <input type="password" placeholder="Password" id="email-ec58" name="pass" class="u-input u-input-rectangle u-radius-8" required>
+                        </div>
+                        <div class="u-align-center u-form-group u-form-submit" style="margin-bottom:2px">
+                            <input class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-2 u-radius-8 u-btn-1" style="background: none;border: none;padding: 0;height: 42px;" type="submit" name="submit" value="Login">
+                        </div>
+                        <p style="margin: 0 0 8px;
+    padding: 10px 0 10px 60px;
+"></p>
+                    </form>
+                </div>
+                <h1 class="u-text u-text-body-color u-text-default u-text-1" style="padding-top:10px">Admin Login</h1>
+                <div class="u-clearfix u-custom-html u-expanded-width u-custom-html-1"></div>
+            </div>
+        </section>
+    
+    {% if alert %} 
+    <div id="overlay"></div>
+    <div id="popup" style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+            <div class="content">
+                <h3 style="font-family: 'Mulish', sans-serif;padding-top:50px;font-size: 30px;font-weight: bold;">{{ alert }}</h3><button id="close">Close</button>
+            </div>
+        </div>
+    {% endif %}
+    <script>
+        document.querySelector('#close').addEventListener('click', function() {
+            document.querySelector('#popup').style.display = 'none';
+             document.querySelector('#overlay').style.display = 'none';
+        });
+    </script>
+    </body>
+</html>
